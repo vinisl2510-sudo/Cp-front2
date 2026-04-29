@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.cabecalho{
+    background-color: #ffffff;
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* logo */
+.cabecalho img{
+    width: 100px;
+    height: auto;
+}
+
+/* menu */
+.menu{
+    display: flex;
+    gap: 120px;
+    margin-right: 530px;
+}
+
+.menu h2{
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* efeito hover igual Airbnb */
+.menu h2:hover{
+    color: #ff385c;
+}
+
+.login{
+    display: flex;
+    margin-right: 100px;
+}
+
+.login h2{
+    font-size: 16px;
+    font-weight:bold;
+    color: #000;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.host{
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.host:hover{
+    background: #f7f7f7;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+
+.icons{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ 
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    padding: 10px 15px;
+    width: 800px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    gap: 50px;
+}
+
+
+.search-item{
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.search-item span{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.search-item p{
+    font-size: 14px;
+    color: gray;
+}
+
+
+.divider{
+    width: 1px;
+    height: 30px;
+    background: #ddd;
+}
+
+
+.search-btn{
+    background: #ff385c;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.SaoPaulo{
+    padding: 40px;
+}
+
+.Fotos{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+.card {
+  position: relative; /* ESSENCIAL */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* balão */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background-color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.card2 img {
+  width: 100%;
+  height: 250px ;
+  border-radius: 10px;
+  display: block;
+}
+
+.card2{
+    position: relative; /* ESSENCIAL */
+}
