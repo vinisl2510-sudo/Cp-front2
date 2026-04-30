@@ -12,11 +12,9 @@ body{
     background-color: #ffffff;
     width: 100%;
     height: 80px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 60px;
     border-bottom: 1px solid #ddd;
 }
@@ -68,6 +66,7 @@ body{
 
 .host{
     font-size: 14px;
+    font-weight:bold;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -88,7 +87,6 @@ body{
     display: flex;
     align-items: center;
     gap: 8px;
-
     border: 1px solid #ddd;
     padding: 6px 10px;
     border-radius: 20px;
@@ -96,62 +94,54 @@ body{
 }
 
  
-
-.search-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.search-box{
-    display: flex;
-    align-items: center;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 40px;
-    padding: 10px 15px;
-    width: 800px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    gap: 50px;
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid rgb(88, 88, 88);
+  border-radius: 40px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  gap: 30px;
+  width: 800px;       
+  max-width: 90%;
+  margin: 20px auto;     
 }
 
-
-.search-item{
-    padding: 0 20px;
-    cursor: pointer;
+.search-item {
+  display: flex;
+  flex-direction: column;
 }
 
-.search-item span{
-    font-size: 12px;
-    font-weight: 600;
+.search-item label {
+  font-size: 12px;
+  font-weight: bold;
 }
 
-.search-item p{
-    font-size: 14px;
-    color: gray;
+.search-item input {
+  border: none;
+  outline: none;
+  font-size: 14px;
 }
 
-
-.divider{
-    width: 1px;
-    height: 30px;
-    background: #ddd;
+.divider {
+  width: 1px;
+  height: 30px;
+  background: #ddd;
 }
 
-
-.search-btn{
-    background: #ff385c;
-    color: white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-left: auto;
-    cursor: pointer;
+.search-btn {
+  background: #ff385c;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .SaoPaulo{
@@ -163,7 +153,6 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-
 }
 
 .card {
@@ -174,6 +163,7 @@ body{
   width: 100%;
   border-radius: 10px;
   display: block;
+  cursor: pointer;
 }
 
 
@@ -181,14 +171,11 @@ body{
   position: absolute;
   top: 10px;
   left: 10px;
-
   background-color: white;
   padding: 6px 12px;
   border-radius: 20px;
-
   font-size: 12px;
   font-weight: 600;
-
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -196,14 +183,11 @@ body{
   position: absolute;
   top: 10px;
   right: 10px;
-
   background-color: white;
   padding: 6px 12px;
   border-radius: 20px;
-
   font-size: 18px;
   font-weight: 600;
-
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -213,18 +197,6 @@ body{
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
-
-.card2 img {
-  width: 100%;
-  height: auto ;
-  border-radius: 10px;
-  display: block;
-}
-
-.card2{
-    position: relative; 
-}
-
 
 .card-info {
   padding: 10px 5px;
@@ -236,5 +208,6 @@ body{
   color: #555; 
   margin: 5px 0;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
